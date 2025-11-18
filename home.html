@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home – X Minimal</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+  <nav class="fixed bottom-0 left-0 right-0 bg-black border-t border-zinc-800 md:static md:border-none">
+    <div class="flex justify-around py-3 md:max-w-xs md:mx-auto">
+      <a href="home.html" class="text-2xl">🏠</a>
+      <a href="create.html" class="text-2xl">+</a>
+      <a href="trending.html" class="text-2xl">🔥</a>
+      <a href="profile.html" class="text-2xl">👤</a>
+    </div>
+  </nav>
+
+  <main class="flex-1 pb-20 md:pb-0 md:max-w-2xl md:mx-auto md:pt-8">
+    <div id="feed"></div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+  <script>
+    loadFeed();
+  </script>
+</body>
+</html>

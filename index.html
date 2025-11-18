@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X Minimal Login</title>
+  <link rel="manifest" href="manifest.json">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white min-h-screen flex items-center justify-center">
+  <div class="max-w-xs w-full p-6">
+    <h1 class="text-3xl font-bold mb-8 text-center">X Minimal</h1>
+    <input id="email" type="email" placeholder="Email" class="w-full p-3 mb-4 bg-zinc-900 rounded">
+    <input id="password" type="password" placeholder="Password" class="w-full p-3 mb-4 bg-zinc-900 rounded">
+    <input id="displayName" placeholder="Display name (optional)" class="w-full p-3 mb-4 bg-zinc-900 rounded">
+    <button id="login" class="w-full bg-white text-black font-bold py-3 rounded mb-2">Log in</button>
+    <button id="signup" class="w-full bg-zinc-800 py-3 rounded">Sign up</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="script.js"></script>
+  <script>
+    initAuth();
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js');
+    }
+  </script>
+</body>
+</html>

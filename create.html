@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Post – X Minimal</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css"> </head><body class="bg-black text-white min-h-screen flex flex-col">
+<nav class="fixed bottom-0 w-full bg-black border-t border-zinc-800 z-10 md:static">
+  <div class="flex justify-around py-3 text-2xl max-w-2xl mx-auto">
+    <a href="home.html">🏠</a>
+    <a href="create.html">+</a>
+    <a href="trending.html">🔥</a>
+    <a href="profile.html">👤</a>
+  </div>
+</nav>
+<main class="flex-1 p-4 max-w-2xl mx-auto">
+  <textarea id="text" placeholder="What's happening?" class="w-full h-32 p-4 bg-zinc-900 rounded mb-4"></textarea>
+  <input type="file" id="image" accept="image/*" class="mb-4">
+  <label><input type="checkbox" id="anonymous"> Post as Anonymous</label>
+  <button id="postBtn" class="w-full bg-white text-black font-bold py-3 rounded mt-4">Post</button>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+</body></html>

@@ -1,0 +1,15 @@
+.post-card {
+    border-bottom: 1px solid #333;
+    padding: 16px;
+  }
+  .avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #333;
+  }
+  img.post-img {
+    max-width: 100%;
+    border-radius: 12px;
+    margin-top: 12px;
+  }
